@@ -41,9 +41,9 @@ module.exports = function(grunt) {
 			},
 			themes: {
 				expand: true,
-				cwd: 'css/theme/source',
+				cwd: 'theme/source',
 				src: ['*.sass', '*.scss'],
-				dest: 'css/theme',
+				dest: 'example/css/theme',
 				ext: '.css'
 			}
 		},
@@ -124,10 +124,10 @@ module.exports = function(grunt) {
 			},
 			theme: {
 				files: [
-					'css/theme/source/*.sass',
-					'css/theme/source/*.scss',
-					'css/theme/template/*.sass',
-					'css/theme/template/*.scss'
+					'theme/source/*.sass',
+					'theme/source/*.scss',
+					'theme/template/*.sass',
+					'theme/template/*.scss'
 				],
 				tasks: 'css-themes'
 			},
