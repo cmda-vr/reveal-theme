@@ -22,7 +22,7 @@ $mainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $headingFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: normal;
 $headingFontWeight: 600;
 $linkColor: #009EE0;
 $linkColorHover: lighten( $linkColor, 15% );
@@ -37,6 +37,11 @@ section.has-dark-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 	}
+	text-align: center !important; 
+}
+
+.slides section {
+	text-align: left;
 }
 
 hr {
@@ -45,7 +50,6 @@ hr {
 	height: 3px;
 	border: none;
 }
-
 
 // Theme template ------------------------------
 @import "../template/theme";
